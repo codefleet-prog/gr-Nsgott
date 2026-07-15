@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grüNsgott | Kertépítés és Zöld Szolgáltatások</title>
+    <meta name="description" content="grüNsgott: Fűnyírás, telekrendezés, robotfűnyíró telepítés és precíz zöld szolgáltatások Nagykanizsán és környékén.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loader-overlay" id="loader-overlay">
+        <div class="loader-content">
+            <span class="loader-text">grüNsgott</span>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor-glow" id="cursor-glow"></div>
+    
+    <nav class="navbar">
+        <a href="#hero" class="logo-container scroll-link">
+            <span class="logo-text">grüNsgott</span>
+        </a>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="scroll-link">róLunk</a></li>
+            <li><a href="#posts" class="scroll-link">munKáink</a></li>
+            <li><a href="#contact" class="scroll-link">kapCsolat</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section is 200vh to allow for sticky scrolling -->
+    <main class="hero-section" id="hero">
+        <div class="sticky-hero-wrapper">
+            <div class="abstract-shape shape-1" id="shape-1"></div>
+            <div class="abstract-shape shape-2" id="shape-2"></div>
+            <div class="abstract-shape shape-3" id="shape-3"></div>
+
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        a kerTed jó <br>
+                        <span class="highlight">keZekben</span> van.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Nem csak füvet nyírunk. Precíz munka, megbízhatóság és jó hangulat a zöld területeiden.
+                    </p>
+                    <button class="cta-button" id="cta-btn" onclick="document.getElementById('posts').scrollIntoView({behavior: 'smooth'})">megNézem</button>
+                </div>
+                <div class="hero-image-container">
+                    <img src="logo.jpg" alt="grüNsgott Logo" class="hero-logo" id="hero-logo">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="about-section" id="about">
+        <div class="abstract-shape shape-4"></div>
+        <div class="about-content">
+            <h2 class="section-title reveal-element">szolgálTatások</h2>
+            <div class="about-grid">
+                <div class="about-card services-card reveal-element">
+                    <h3>FűNyírás és GyepGondozás</h3>
+                    <p>Teljes körű gyepápolás, precíziós fűnyírás és szegélyvágás minden méretű területen. Célunk a tökéletes, egészséges zöld pázsit kialakítása és fenntartása.</p>
+                </div>
+                <div class="about-card services-card reveal-element">
+                    <h3>TeLekrendezés</h3>
+                    <p>Elhanyagolt területek megtisztítása, bozótirtás, fakivágás és a zöldhulladék teljes körű elszállítása. Újra élhetővé varázsoljuk a telkedet.</p>
+                </div>
+                <div class="about-card services-card reveal-element">
+                    <h3>SöVényvágás</h3>
+                    <p>Sövények, bokrok és cserjék szakszerű metszése, formázása és ifjítása. Esztétikus és egészséges növényzet egész évben.</p>
+                </div>
+                <div class="about-card services-card reveal-element">
+                    <h3>RoBotfűnyíró TeLepítés</h3>
+                    <p>Okos megoldások a kertben. Segítünk a megfelelő robotfűnyíró kiválasztásában, telepítésében és a határoló vezetékek szakszerű lefektetésében.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="posts-section" id="posts">
+        <div class="abstract-shape shape-5"></div>
+        <div class="posts-content">
+            <h2 class="section-title reveal-element">legUtóbbi munKáink</h2>
+            <div class="posts-grid">
+                <div class="post-card reveal-element">
+                    <img src="1.jpg" alt="Gólya minőségellenőr" class="post-image">
+                    <div class="post-date">Nagykanizsa</div>
+                    <p class="post-text">Gólya minőségellenőr munka közben. Mindent rendben talált, folytatjuk a munkát a tökéletes gyepért!</p>
+                </div>
+                <div class="post-card reveal-element">
+                    <img src="2.jpg" alt="Balatoni nyaraló" class="post-image">
+                    <div class="post-date">Siófok - Aranypart</div>
+                    <p class="post-text">Balatoni nyaraló teljes körű fűnyírása és zöldterület-kezelése. Precíz munka a gyönyörű környezetben, hogy a pihenés zavartalan legyen.</p>
+                </div>
+                <div class="post-card reveal-element">
+                    <img src="3.jpg" alt="Robotfűnyíró telepítés" class="post-image">
+                    <div class="post-date">Zala megye</div>
+                    <p class="post-text">Robotfűnyíró telepítése és a terület előkészítése. Modern és kényelmes megoldás a mindig tökéletes pázsitért, ami leveszi a terhet a válladról.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section" id="contact">
+        <div class="abstract-shape shape-6"></div>
+        <div class="footer-content">
+            <h2 class="section-title reveal-element">kapCsolat</h2>
+            <div class="contact-grid">
+                <a href="tel:+36309500245" class="contact-card-modern reveal-element">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </span>
+                    <div class="contact-text">
+                        <h3>Hívj MInket</h3>
+                        <p>+36 30 950 0245</p>
+                    </div>
+                </a>
+                <div class="contact-card-modern reveal-element">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </span>
+                    <div class="contact-text">
+                        <h3>LéRhetőségünk</h3>
+                        <p>Nagykanizsa és vonzáskörzete</p>
+                    </div>
+                </div>
+                <div class="contact-card-modern reveal-element">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </span>
+                    <div class="contact-text">
+                        <h3>KéRj Ajánlatot</h3>
+                        <p>Keress minket bizalommal Facebookon!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom reveal-element">
+                <p>&copy; 2026 grüNsgott. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
